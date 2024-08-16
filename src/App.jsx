@@ -6,7 +6,7 @@ function App() {
   const [length, setLength] = useState(8); // Takes length of password
   const [numAllowed, setNumAllowed] = useState(false); // Checkbox to toggle the use of numbers in password
   const [charAllowed, setCharAllowed] = useState(false); // Checkbox to toggle the use of special characters in password
-  const [password, setPassword] = useState("none"); // For password in input field
+  const [password, setPassword] = useState(""); // For password in input field
    
   const passwordGen = useCallback(() => {
     let string = "abcdefghijklmnopqrstuvwxyz";
